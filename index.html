@@ -20,7 +20,7 @@
     <!-- Header -->
     <header>
         <!-- Navbar Section -->
-        <nav class="mx-4">
+        <nav class="mx-4 max-w-[1200px] flex justify-center">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -74,15 +74,79 @@
     </header>
 
     <!-- Main Content -->
-    <main class="my-10 space-y-10">
+    <main class="my-10 space-y-10 flex justify-center">
         <!-- Benefits Section -->
-        <section>
+        <section class="max-w-[1200px] space-y-16">
             <!-- Title Container -->
             <div class="text-center space-y-3">
                 <h2 class="text-3xl font-bold">Why Choose Us</h2>
                 <p class="text-gray-400  font-medium">We provide the best shopping experience with non stop service.</p>
             </div>
+            <!-- Card Container -->
+            <div class="grid grid-cols-4 gap-5">
+                <!-- Delivery  -->
+                <div class=" rounded-lg p-5 shadow-lg relative">
+                    <div class="mb-5">
+                        <div
+                            class="absolute top-[-20%] text-lg  rounded-md flex justify-center items-center bg-purple-100 h-[50px] w-[50px]">
+                            <i class="fa-regular fa-truck text-purple-600"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-semibold">Fast Delivery</h4>
+                        <p class="text-sm text-gray-400">Get your order delivered to your doorstep quickly and
+                            efficiently.</p>
+                    </div>
+                </div>
+                <!-- Support -->
+                <div class=" rounded-lg shadow-lg p-5 relative">
+                    <div class="mb-5">
+                        <div
+                            class="absolute top-[-20%] text-lg text-purple-600  rounded-md flex justify-center items-center bg-purple-100 h-[50px] w-[50px]">
+                            <i class="fa-regular fa-headphones "></i>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-semibold">24/7 Support</h4>
+                        <p class="text-sm text-gray-400">Our support team is available around the clock to assist you.</p>
+                    </div>
+                </div>
+                <!-- Secure -->
+                <div class=" rounded-lg shadow-lg p-5 relative">
+                    <div class="mb-5">
+                        <div
+                            class="absolute top-[-20%] text-lg text-purple-600  rounded-md flex justify-center items-center bg-purple-100 h-[50px] w-[50px]">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-semibold">Secure Payment</h4>
+                        <p class="text-sm text-gray-400">Experience safe and secure transaction with our encrypted payment system.</p>
+                    </div>
+                </div>
+                <!-- Return -->
+                <div class=" rounded-lg shadow-lg p-5 relative">
+                    <div class="mb-5">
+                        <div
+                            class="absolute top-[-20%] text-lg text-purple-600  rounded-md flex justify-center items-center bg-purple-100 h-[50px] w-[50px]">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-semibold">Easy Returns</h4>
+                        <p class="text-sm text-gray-400">Not satisfied ? Return your product easily within 30 days.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Trending Section -->
+         <section>
+            <h2>Trending Now</h2>
+            <div>
+
+            </div>            
+         </section>
     </main>
 </body>
 

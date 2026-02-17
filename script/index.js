@@ -6,7 +6,7 @@ const loadProducts = () => {
     fetch("https://fakestoreapi.com/products")
         .then(res => res.json())
         .then(data => {
-            allProducts = data; // store for optional manual filtering
+            allProducts = data;
             displayProducts(data);
             displayTopRatedProducts(data);
         });
@@ -218,7 +218,7 @@ productsMenuMobile.addEventListener("click", () => {
 
 const showProductModal = (product) => {
     const modal = document.getElementById("productModal");
-    modal.classList.add("modal-open"); // DaisyUI class to show modal
+    modal.classList.add("modal-open"); 
 
     document.getElementById("modalTitle").innerText = product.title;
     document.getElementById("modalDescription").innerText = product.description;

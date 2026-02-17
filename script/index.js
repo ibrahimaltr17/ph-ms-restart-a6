@@ -27,7 +27,7 @@ const displayProducts = (products) => {
     for (let product of products) {
         const productCard = document.createElement("div");
         productCard.innerHTML = `
-            <div class="border border-gray-200 rounded-lg w-fit"> 
+            <div class="border border-gray-200 rounded-lg w-full"> 
                 <div class="h-72 w-full flex items-center justify-center p-4 rounded-t-lg bg-gray-200">
                     <img class="max-h-full max-w-full object-contain" src="${product.image}" alt="${product.title}">
                 </div>
@@ -76,7 +76,7 @@ const displayTopRatedProducts = (products) => {
     for (let product of topProducts) {
         const productCard = document.createElement("div");
         productCard.innerHTML = `
-            <div class="border border-gray-200 rounded-lg w-fit"> 
+            <div class="border border-gray-200 rounded-lg w-full"> 
                 <div class="h-72 w-full flex items-center justify-center p-4 rounded-t-lg bg-gray-200">
                     <img class="max-h-full max-w-full object-contain" src="${product.image}" alt="${product.title}">
                 </div>

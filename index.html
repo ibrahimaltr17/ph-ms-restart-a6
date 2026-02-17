@@ -23,6 +23,19 @@
         <nav class="mx-4 max-w-[1200px] flex justify-center">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
+                    
+                    <a class=" text-xl font-bold text-purple-600">SwiftCart</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a id="homeMenu">Home</a></li>
+                        <li><a id="productsMenu" class="active:text-purple-600">Products</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="cursor-pointer"><i class="fa-solid fa-cart-shopping text-lg"></i></button>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -39,18 +52,6 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class=" text-xl font-bold text-purple-600">SwiftCart</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a id="homeMenu">Home</a></li>
-                        <li><a id="productsMenu" class="active:text-purple-600">Products</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <button class="cursor-pointer"><i class="fa-solid fa-cart-shopping text-lg"></i></button>
                 </div>
             </div>
         </nav>
@@ -76,14 +77,14 @@
     <!-- Main Content -->
     <main class="my-10 space-y-10 ">
         <!-- Benefits Section -->
-        <section id="benefitsSection" class="max-w-[1200px] mx-auto space-y-16">
+        <section id="benefitsSection" class="max-w-[1200px] mx-auto space-y-16 px-6">
             <!-- Title Container -->
             <div class="text-center space-y-3">
                 <h2 class="text-3xl font-bold">Why Choose Us</h2>
                 <p class="text-gray-400  font-medium">We provide the best shopping experience with non stop service.</p>
             </div>
             <!-- Card Container -->
-            <div class="grid grid-cols-4 gap-5">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-5">
                 <!-- Delivery  -->
                 <div class=" rounded-lg p-5 shadow-lg relative">
                     <div class="mb-5">
@@ -144,9 +145,9 @@
 
         <!-- Trending Section -->
         <!-- Trending Section -->
-        <section id="trendingSection" class="max-w-[1200px] mx-auto space-y-6">
+        <section id="trendingSection" class="max-w-[1200px] mx-auto space-y-6 px-6">
             <h2 class="text-3xl font-bold">Trending Now</h2>
-            <div id="topRatedProducts" class="grid grid-cols-3 gap-6 mt-5">
+            <div id="topRatedProducts" class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
 
             </div>
         </section>
@@ -156,18 +157,20 @@
         <section id="productSection" class="hidden max-w-[1200px] mx-auto space-y-10">
             <div class="space-y-10 flex flex-col items-center">
                 <h2 class="text-3xl font-bold">Our Products</h2>
-                <div id="categoriesContainer" class="flex gap-3">
+                <div id="categoriesContainer" class="flex flex-wrap justify-center gap-3">
 
                 </div>
             </div>
-            <div id="productCard" class="grid grid-cols-4 gap-4 "></div>
+            <div id="productCard" class="grid grid-cols-1 lg:grid-cols-4 gap-4 px-6">
+
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <footer class="footer bg-blue-950 sm:footer-horizontal bg-base-200 text-base-content p-10">
-            <div class="max-w-[1200px] grid grid-cols-4 gap-4">
+            <div class="max-w-[1200px] grid grid-cols-1 lg:grid-cols-4 gap-4">
                 <div class="space-y-5">
                     <h2 class="text-2xl font-bold text-purple-600">SwiftCart</h2>
                     <p class="text-xm text-gray-400">Your one-stop shop for all your fashion and lifestyle needs.
